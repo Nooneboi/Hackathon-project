@@ -1,0 +1,154 @@
+.form {
+    width: 400px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin: 100px auto; 
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+  }
+  
+
+  .form h2 {
+    margin-top: 15px;
+  }
+  
+
+  .form label {
+    display: block;
+    font-size: 19px;
+    margin-top: 20px;
+    font-weight: 1000;
+  }
+  
+  .form input {
+    padding: 10px;
+    font-size: 19px;
+    border: 1px solid rgba(0, 0, 0, 0.275);
+    border-radius: 7px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 40px;
+    width: 100%; 
+  }
+  
+
+  .form button {
+    cursor: pointer;
+    background-color: rgb(44, 111, 255);
+    border: 0px;
+    border-radius: 7px;
+    font-size: 19px;
+    color: white;
+    margin-top: 30px;
+    height: 50px;
+    width: 100%; 
+  }
+  
+  .regform {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+  }
+  
+
+  .Alert {
+    color: red;
+  }
+  
+
+  .user-information {
+    display: none;
+    width: 100%;
+    height: 250px;
+    max-width: 350px;
+    margin-top: 250px; 
+    margin-right: 350px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  
+
+  .user-information h2 {
+    margin: 0;
+    color: black;
+  }
+  
+
+  .user-information p {
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .phone-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-input input {
+    width: calc(100% - 30px);
+    padding-right: 30px;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+
+
+
+
+  .info-button {
+    border: 0px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(44, 111, 255);
+    font-size: 17px;
+    width: 100px;
+    height: 34px;
+    margin: 20px auto; 
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 1100px) {
+        .user-information {
+            margin: 100px;
+        }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .form {
+      width: 90%;
+      margin: 20px auto; 
+    }
+    
+    .user-information {
+      margin-top: 20px; 
+      margin-left: 350px;
+    }
+  }
+
+  .delete-button {
+    cursor: pointer;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 7px;
+    font-size: 19px;
+    color: white;
+    margin-top: 15px;
+    height: 50px;
+    width: 100%;
+  }
+  
+  .delete-button:hover {
+    background-color: #d43f3f;
+  }
+
+  

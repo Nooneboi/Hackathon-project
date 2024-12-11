@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans';
+}
+
+body {
+  background-color: var(--body_background);
+  color: var(--color); 
+}
+
+:root {
+  --body_background: rgb(255, 255, 255);
+  --link_color: navy;
+  --link_hover_color: lightblue;
+  --color: black; 
+  --background-color: white;
+}
+
+[data-theme="dark"] {
+  --body_background: #282c34;
+  --link_color: cyan;
+  --link_hover_color: deepskyblue;
+  --color: white; 
+  --background-color: #0e0f12;
+}
+
+.nav {
+  font-weight: 1000;
+  height: 90px;
+  display: flex;
+  gap: 25px;
+  font-size: 20px;
+  padding-top: 35px;
+  padding-left: 10px;
+  backdrop-filter: blur(5px);
+ 
+}
+
+.nav-link {
+  color: var(--link_color);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--link_hover_color);
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    font-size: 15px;
+    gap: 10px;
+    height: 70px;
+    padding: 30px 10px;
+  }
+
+  .nav span {
+    display: none;
+  }
+
+  .nav .i {
+    font-size: 23px;
+    padding-left: 10px;
+  }
+}
